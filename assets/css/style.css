@@ -110,7 +110,8 @@ h6 {
   font-size: 16px;
 }
 
-ul, ol {
+ul,
+ol {
   margin: 0px;
   padding: 0px;
   list-style-type: none;
@@ -161,8 +162,8 @@ p {
 @media (max-width: 767px) {
   .odd-col {
     -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    -ms-flex-order: -1;
+    order: -1;
   }
 }
 
@@ -177,7 +178,7 @@ p {
 }
 
 .common-btn::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1010,7 +1011,11 @@ p {
 }
 
 main.main-06 {
-  background: #0A0A0A;
+  /* background: #0A0A0A; */
+  background-image: linear-gradient(rgba(39, 1, 114),#690000,rgba(39, 1, 114));
+  /* background: #cecece; */
+  
+  
   overflow: hidden;
 }
 
@@ -1042,8 +1047,8 @@ main .header.header-06 .header-right a {
 main .main-wrapper.demo-06 {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   height: auto;
 }
 
@@ -1089,25 +1094,33 @@ main .main-wrapper.demo-06 .hero-area .countdown .single-count-content {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
 }
 
 main .main-wrapper.demo-06 .hero-area .countdown .single-count-content::after {
-  content: ':';
+  content: ":";
   font-size: 54px;
   color: #fff;
   top: 35px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  main .main-wrapper.demo-06 .hero-area .countdown .single-count-content::after {
+  main
+    .main-wrapper.demo-06
+    .hero-area
+    .countdown
+    .single-count-content::after {
     top: 30px;
   }
 }
 
 @media (max-width: 767px) {
-  main .main-wrapper.demo-06 .hero-area .countdown .single-count-content::after {
+  main
+    .main-wrapper.demo-06
+    .hero-area
+    .countdown
+    .single-count-content::after {
     top: 30px;
     font-size: 45px;
   }
@@ -1121,19 +1134,29 @@ main .main-wrapper.demo-06 .hero-area .countdown .single-count-content .count {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  main .main-wrapper.demo-06 .hero-area .countdown .single-count-content .count {
+  main
+    .main-wrapper.demo-06
+    .hero-area
+    .countdown
+    .single-count-content
+    .count {
     font-size: 50px;
   }
 }
 
 @media (max-width: 767px) {
-  main .main-wrapper.demo-06 .hero-area .countdown .single-count-content .count {
+  main
+    .main-wrapper.demo-06
+    .hero-area
+    .countdown
+    .single-count-content
+    .count {
     font-size: 40px;
   }
 }
 
 main .main-wrapper.demo-06 .hero-area .countdown .single-count-content .text {
-  font-family: "Space Mono", sans-serif;
+  font-family: "ubuntu", sans-serif;
   font-size: 17px;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -1171,7 +1194,7 @@ main .main-wrapper.demo-06 .team-area .section-title h1 {
 }
 
 main .main-wrapper.demo-06 .team-area .section-title h1::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 30px;
   height: 1px;
@@ -1181,7 +1204,7 @@ main .main-wrapper.demo-06 .team-area .section-title h1::after {
 }
 
 main .main-wrapper.demo-06 .team-area .section-title h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: "ubuntu", sans-serif;
   font-size: 45px;
   line-height: 55px;
   font-weight: 45px;
@@ -1208,10 +1231,10 @@ main .main-wrapper.demo-06 .team-area .team-wrapper {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-left: -25px;
   margin-right: -25px;
 }
@@ -1248,64 +1271,145 @@ main .main-wrapper.demo-06 .team-area .team-wrapper .team-item .team-img {
 }
 
 main .main-wrapper.demo-06 .team-area .team-wrapper .team-item .team-img img {
-  width: 100%;
+  width: 65%;
+  text-align: centre;
+  padding-left: 100px;
 }
 
-main .main-wrapper.demo-06 .team-area .team-wrapper .team-item .team-img .social-links {
+main
+  .main-wrapper.demo-06
+  .team-area
+  .team-wrapper
+  .team-item
+  .team-img
+  .social-links {
   position: absolute;
   width: 185px;
   height: 0px;
-  background: #fff;
+  
+  background: rgb(26, 60, 128);
   border-top-right-radius: 57px;
   left: 0;
-  bottom: 0;
+  bottom: 10;
+  
+  
+  
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
-main .main-wrapper.demo-06 .team-area .team-wrapper .team-item .team-img .social-links li {
+main
+  .main-wrapper.demo-06
+  .team-area
+  .team-wrapper
+  .team-item
+  .team-img
+  .social-links
+  li {
   display: inline-block;
   margin: 0 8px;
 }
 
-main .main-wrapper.demo-06 .team-area .team-wrapper .team-item .team-img .social-links li a {
+main
+  .main-wrapper.demo-06
+  .team-area
+  .team-wrapper
+  .team-item
+  .team-img
+  .social-links
+  li
+  a {
   font-size: 18px;
-  color: #0A0A0A;
+  color: #f0efef;
 }
 
-main .main-wrapper.demo-06 .team-area .team-wrapper .team-item .team-img .social-links li a:hover {
-  color: #D5081A;
+main
+  .main-wrapper.demo-06
+  .team-area
+  .team-wrapper
+  .team-item
+  .team-img
+  .social-links
+  li
+  a:hover {
+  color: #0e0d0e;
 }
 
-main .main-wrapper.demo-06 .team-area .team-wrapper .team-item:hover .team-img .social-links {
+main
+  .main-wrapper.demo-06
+  .team-area
+  .team-wrapper
+  .team-item:hover
+  .team-img
+  .social-links {
   height: 57px;
   opacity: 1;
   visibility: visible;
 }
 
+
+
+ .card{
+  box-shadow: 0 8px 16px 0;
+  transition: 0.3s;
+  background-color: rgb(250, 248, 248);
+  padding: 25px 10px;
+  height: 40%;
+  border-radius: 5px;
+  width: 40%;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(50, 190, 62, 0.1);
+}
+
+.card.style {
+  box-shadow: 0 8px 16px 0;
+  transition: 0.3s;
+  background-color: rgb(250, 248, 248);
+  padding: 10px 10px;
+  height: 40%;
+  border-radius: 5px;
+  width: 40%;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(50, 190, 62, 0.1);
+}
+
+
+
+
+
 main .main-wrapper.demo-06 .team-area .team-wrapper .team-item .team-info h4 {
   font-size: 24px;
   font-weight: 700;
-  color: #fff;
+  color: rgb(7, 7, 7);
+  text-align: center;
+  padding: 50px 0;
   font-family: "Poppins", sans-serif;
 }
 
 main .main-wrapper.demo-06 .team-area .team-wrapper .team-item .team-info p {
   font-family: "Space Mono", sans-serif;
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-weight: 550px;
+  color: rgba(17, 17, 17, 0.7);
+  text-align: center;
+  top: 7;
+  margin-bottom: 7px;
+  /* padding-bottom: 50px; */
 }
+
 
 main .footer {
   width: 100%;
@@ -1314,7 +1418,7 @@ main .footer {
 
 main .footer p {
   font-family: "Space Mono", sans-serif;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(10, 10, 10, 0.7);
 }
 
 @media (max-width: 767px) {
